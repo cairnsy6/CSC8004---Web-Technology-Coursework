@@ -1,0 +1,229 @@
+/*I got the majority of my inspiration from udemy.com where I purchased a web developer
+course. It gave a number insights into web development. It taught
+HTML and CSS and also showed me how bootstrap is used which makes CSS coding considerably
+easier. Code for the navbar and images has been produced using inspiration from the course.
+I would have used the card or thumbail and row/column options for the images but it was too 
+much code.
+*/
+
+html{
+    background-color: #b3b3b3;
+    margin: 0 auto;
+}
+/*The background of the page, along with the margins keeping the page alligned*/
+
+#wholepage{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 69%;
+    position: relative;
+    line-height: 1.5;
+}
+/*The css used for everything on the page. It acts as a container and a baseline
+where the entire page draws the code from. The margin keeps the container in the 
+centre of the page with the width determining the size*/
+h1, h2, h3 {
+    font-family: "Lucida Sans Unicode";
+    color: #004B77;
+    padding-left:1%; 
+}
+/*Code for the headings. Was able to find a link to use Lucida Sans Unicode*/
+
+h1 {
+    border-right: 15px solid #FFFFFF;
+    padding-left: 1%;
+    padding-top:2%;
+    padding-bottom:3%;
+    background-image:url(http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8004/css/sign_language.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+}
+/*Code for the first heading.If there was more than one h1 i would use nth-of-type. Helps aline 
+the text and keep the image to the right and bottom of the content*/
+hr{
+    height: 10px;
+    background-color: #004B77;
+}
+/*The code for the horizontal rule that seperates the page in different areas*/
+p {
+    font-family: "Palatino Linotype";
+    line-height: 1.5;
+    
+}
+/*The paragraph code so all words within the <p> have line height of 1.5 and SHOULD have
+all the text as "Palatino Linotype". I unfortunately couldn't find a link that would allow
+me to use that font for free so it is not being applied in the html*/
+li {
+      font-family: "Palatino Linotype";
+}
+/*The lists would have font-family Palatino Linotype but again couldn't find a link
+that didn't cost so wasn't able to apply it to the html*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+/*The navbar is moved to the top using the absolute positioning and covers the whole
+length of the container using the width at 100% */
+.navbar ul {
+    list-style-type: none;
+    background-color: #004B77;
+    padding: 0;
+    float: right;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*The unordered list of the navbar being organized into a navbar style. The list style 
+type removes the structure of the list. The navbar is still vertical at this point though */
+.navbar li {
+    position: relative;
+    left: 55%; 
+    float: left;   
+}
+/*This causes the navbar to now be horizontal and the left moves the navbar li items over to the right*/
+.navbar a {
+    display: block;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+/*This deals solely with the navbar links and basically removes the look of them and makes the text white*/
+.navbar a:hover {
+    background-color: #3399ff; 
+}
+/*This changes the background color of the link when you hover abovve it*/
+.navbarextra ul{
+    display:  none;
+}
+/*This makes the sublist disappear from view. There was no mention of a drop down menu for the extra bits in the
+assignment and so I did not include one*/
+
+#intro {
+    border-top: 10px solid #004B77;
+    padding-bottom: 10px;  
+}
+
+#intro p{
+    padding-left: 5px;
+}
+/*Code to keep the intro text in the correct place*/
+
+#history img{
+    float: right;
+    border:5px solid #cccccc;
+    /* border-radius: 25px; */
+    padding: 1% 2%;
+    margin-right: 2%;
+    margin-left: 1%;  
+}
+/*This moves the history image over to the right and adds the border with curved corners*/
+#history p{
+    margin-bottom: 2%;
+    clear:left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*This moves the text to the left of the image*/
+
+#linguistics img{
+    float:left;
+}
+/*This moves the image to the left*/
+#languagepic {
+    border:3px double #004B77;
+    width:40%;
+    height:50%;
+    padding:5px;
+    margin-left: 1%;
+    margin-bottom: -800px;
+    text-align:left;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    line-height: 1.4;
+    font-size: 80%;
+}
+/*This produces a container for the picture and the contents below. It moves it to
+the left of the screen and puts the image and text in the right place*/
+
+#map img  {
+    width: 100%;
+}
+/*This make the width if the map pic equal 100% of the container*/
+
+#maptitle p{
+    text-align: center;
+    border-bottom: 2px solid #004B77;
+    padding-bottom: 10px;
+}
+/*This moves the title below the map into the centre and adds a bottom border*/
+
+#languagepic img{
+    margin-right: 5px;
+}
+/*This moves the content in the container a little over to the right*/
+#language-text {
+    width: 45%;
+    position:relative;
+    left: 47%;
+    bottom: 200px;
+    line-height: 1.5;
+}
+
+/*This moves the text from below the container to the side of it and makes the
+width of the text stay within the space available */
+
+#Legend{
+    font-weight: bold;
+}
+/*This makes the legend bold*/
+#bslimg {
+    border:5px solid #cccccc;
+    padding: 1% 2%;
+    margin: 1% 0 2% 0;
+    /* border-radius: 25px; */
+    float: right;
+    text-align: center;
+}
+#bsl p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*This makes bsl video have a border along with the text that matches it*/
+
+.container {
+    border: 1px solid #000000;
+    margin: 8px;
+    display:inline-block;
+    background-color: #004B77;
+    color: #FFFFFF;
+    text-align: center; 
+}
+/*This makes a container that helps the images to be moved inline with one another.
+It also causes the images to move as the screen size changes*/
+
+.container p {
+    margin: 1px;
+}
+/*Keeps the background of the text content close to the text*/
+
+.bsltitle{
+    color: #ff4000;
+}
+/*Changes the color of the title to red where needed*/
+#letters{
+    border-bottom:10px solid #004B83; 
+}
+/*Add a bottom border to make up for the lack of hr*/
+#footnote{
+    text-align: right;
+    font-size: 80%;
+    padding-bottom: 1%;
+    padding-right:1%;
+}
+/*This moves the footnote at the bottom to the right of the page*/
+/* The document has been validated */

@@ -1,0 +1,32 @@
+
+
+html{
+    background-color: #b3b3b3;
+    margin: 0 auto;
+}
+
+
+body{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 69%;
+    position: relative;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Lucida Sans Unicode";
+    color: #004B77;
+    padding-left:1%; 
+}
+
+img{
+    border: 1px solid #000000;
+    margin: 8px;
+    display:inline-block;
+    background-color: #004B77;
+    color: #FFFFFF;
+    text-align: center; 
+}
+
